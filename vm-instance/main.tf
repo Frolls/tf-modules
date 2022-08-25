@@ -1,10 +1,12 @@
 terraform {
+
+  required_version = ">= 0.13"
+
   required_providers {
     yandex = {
       source = "yandex-cloud/yandex"
     }
   }
-  required_version = ">= 0.13"
 }
 
 resource "yandex_compute_instance" "vm" {
@@ -35,7 +37,6 @@ resource "yandex_compute_instance" "vm" {
 
   metadata = {
     user-data = var.vm_metadata
-    #ssh-keys = "centos:${file("~/.ssh/terraform-nginx.pub")}"
   }
 
 }
