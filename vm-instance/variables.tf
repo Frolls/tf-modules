@@ -30,6 +30,7 @@ variable "vm_nat_enabled" {
 
 variable "vm_image_id" {
   description = "Идентификатор образа"
+  default = "fd88d14a6790do254kj7" # Centos 7
   type        = string
 }
 
