@@ -1,9 +1,9 @@
-output "yc_external_ipv4_address" {
-  value       = "hellO! from external IP" #yandex_vpc_address.addr.external_ipv4_address[0].address
+output "vm_external_ipv4_address" {
+  value       = yandex_compute_instance.vm.network_interface.0.nat_ip_addres
   description = "Внешний IP адрес"
 }
 
-output "internal_ipv4_address" {
-  value       = "hellO! from internal IP" #yandex_vpc_address.addr.external_ipv4_address[0].address
+output "vm_internal_ipv4_address" {
+  value       = yandex_compute_instance.vm.network_interface.0.ip_addres
   description = "Внутренний IP адрес"
 }
