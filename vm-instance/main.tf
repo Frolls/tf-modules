@@ -12,6 +12,7 @@ terraform {
 resource "yandex_compute_instance" "vm" {
 
   name        = var.vm_name
+  hostname    = var.vm_hostname
   platform_id = "standard-v1"
   zone        = var.vm_zone
 

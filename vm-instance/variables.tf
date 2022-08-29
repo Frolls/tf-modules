@@ -3,6 +3,11 @@ variable "vm_name" {
   type        = string
 }
 
+variable "vm_hostname" {
+  description = "Имя хоста для инстанса"
+  type        = string
+}
+
 variable "vm_zone" {
   description = "Зона доступности"
   type        = string
