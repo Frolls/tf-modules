@@ -16,11 +16,13 @@ variable "vm_zone" {
 variable "vm_cores" {
   description = "Количество ядер"
   type        = number
+  default     = 2
 }
 
 variable "vm_memory" {
   description = "Объем памяти"
   type        = number
+  default     = 2
 }
 
 variable "vm_subnet_id" {
