@@ -38,6 +38,12 @@ variable "vm_image_id" {
   type        = string
 }
 
+variable "vm_disk_size" {
+  description = "Размер диска"
+  type        = number
+  default     = 10
+}
+
 variable "vm_metadata" {
   description = "Метаданные виртуальной машины"
   type        = string
